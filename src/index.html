@@ -4,11 +4,82 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="CSS/estilo.css">
-    <script src="JS/teste.js"></script>
+    
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="CSS/app.css">
+    <title>DSY Roupas</title>
 </head>
 <body>
-    <h1>Hellow Word</h1>
+     <div class="container">
+        <header>       
+               
+            <div class="headercima">
+                      
+                      <div class="direito">
+                          
+                            <img src="IMG/menubtn.png" alt="botão de menu" id="btnmenu" >   
+                            
+                            <img id="logo" src="IMG/logo.png" alt="logo">
+                            
+                            <div class="menu hide">
+                                <ul>
+                                    <li><a href="#">Camisas</a></li>
+                                    <li><a href="#">Calça</a></li>
+                                    <li><a href="#">Sapatos</a></li>
+                                </ul>   
+                            </div>
+                        </div>
+                        
+                        <div class="esquerdo">
+                            
+                            <img id="login" src="IMG/login.png" alt="ícone login">
+                            
+                            <img src="Img/carrinho.png" alt="icone carrinho">
+                        </div> 
+            </div>  
+                    
+            <div class="headerbaixo">
+                        
+                <input type="text" placeholder="Procure aqui" id="search">
+                
+            </div>           
+          
+        </header>
+                
+        <nav>
+                    
+            <div id="slider">
+                
+                <img class="selected" src="IMG/im1.jpg" alt="Image1" >
+                <img src="IMG/im2.jpg" alt="Image2">
+                <img src="IMG/im3.jpg" alt="Image3">
+            </div>
+
+        </nav>
+
+       <main>
+
+        <h2>Produtos</h2>
+            <div id="produtos">
+                
+            </div>
+         
+            <h2>Carrinho</h2>   
+            <div id="carrinho">
+                
+            </div>
+            
+            
+        </main>
+        
+        
+        <footer>
+            <span> &copy;2021 - DSY Tech Desenvolvimento Web</span>
+        </footer>
+    </div>
+    
+   <script src="JS/componentes.js"></script>
 </body>
 </html>

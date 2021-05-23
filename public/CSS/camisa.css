@@ -1,0 +1,172 @@
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  -ms-grid-rows: auto auto auto;
+      grid-template-rows: auto auto auto;
+}
+
+header {
+  background-color: #095d94;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+header img {
+  height: 30px;
+}
+
+header .hide {
+  display: none;
+}
+
+header .menu {
+  width: 80vh;
+  height: 20vh;
+  text-align: center;
+}
+
+header .menu li {
+  display: block;
+  padding-top: 15px;
+}
+
+header .menu a {
+  text-decoration: none;
+  color: black;
+  font-weight: 400;
+}
+
+header .headercima {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0.5em 0.5em 0.3em 0.5em;
+}
+
+header .headercima #logo {
+  padding-left: 0.3em;
+}
+
+header .headercima #login {
+  padding-right: 0.3em;
+}
+
+header .headerbaixo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+header .headerbaixo #search {
+  width: 70%;
+  border-radius: 6px;
+  margin-bottom: 0.6em;
+}
+
+header .headerbaixo .deskhide {
+  display: none;
+}
+
+#slider {
+  width: 80%;
+  height: 25vw;
+  max-height: 150px;
+  margin: auto;
+  margin-top: 1em;
+  position: relative;
+}
+
+#slider img {
+  opacity: 0;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+#slider img.selected {
+  opacity: 1;
+}
+
+section {
+  margin: 2em 2em 5em 2em;
+}
+
+section .imgproduto {
+  text-align: center;
+}
+
+section .comproduto {
+  font-weight: 700;
+  font-size: 45px;
+  text-align: center;
+}
+
+button {
+  padding: 10px 20px;
+  border-radius: 10px;
+  background-color: green;
+  color: white;
+  border-color: black;
+  font-size: 18px;
+  -webkit-transition: 200ms -webkit-transform;
+  transition: 200ms -webkit-transform;
+  transition: 200ms transform;
+  transition: 200ms transform, 200ms -webkit-transform;
+}
+
+button:hover {
+  cursor: pointer;
+  -webkit-transform: translateY(-2px);
+          transform: translateY(-2px);
+}
+
+.desproduto h2 {
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+}
+
+footer {
+  border: 1px solid black;
+  background-color: #055488;
+  text-align: center;
+  font-weight: 700;
+}
+
+@media (min-width: 768px) {
+  section {
+    margin-left: 9em;
+  }
+  .a {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .comproduto {
+    border-left: 1px solid black;
+    width: auto;
+  }
+}
+
+@media (min-width: 1024px) {
+  #btnmenu {
+    display: none;
+  }
+}
+/*# sourceMappingURL=camisa.css.map */
